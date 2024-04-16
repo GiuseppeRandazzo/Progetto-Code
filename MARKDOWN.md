@@ -7,3 +7,38 @@ Spesso usato per formattare file di testo semplice in modo da includere elementi
 
 **Markdown** è diventato estremamente popolare per la scrittura di documenti, note, pagine web, e persino post in forum o commenti online, grazie alla sua semplicità e leggibilità.
 
+# Esempi base di sintassi:
+
+## Intestazioni: 
+
+Markdown usa il simbolo # per indicare le intestazioni. Un singolo # seguito da uno spazio rappresenta un'intestazione di livello 1, ## un'intestazione di livello 2 e così via fino a ###### per un'intestazione di livello 6.
+
+"" # Questo è un'intestazione di livello 1 ""
+
+"" ## Questo è un'intestazione di livello 2 ""
+
+## Enfasi:
+
+Per rendere il testo in grassetto, si usano due asterischi o due underscore prima e dopo il testo (testo in grassetto). Per l'italico, si usa un asterisco o un underscore (testo in corsivo).
+
+"" * questo testo sarà in corsivo * ""
+
+"" ** questo testo sarà in grassetto **  ""
+
+## Elenchi:
+
+Gli elenchi puntati si creano iniziando una riga con un asterisco, un più o un meno. Gli elenchi numerati si creano iniziando con un numero seguito da un punto. 
+
+- Elemento 1
+- Elemento 2
+- Elemento 3
+
+1. Primo elemento
+2. Secondo elemento
+
+# Link
+
+Per creare un link, si usa il testo del link tra parentesi quadre seguito dall'URL tra parentesi tonde.
+ 
+[OpenAI] (https://www.openai.com) 
+
