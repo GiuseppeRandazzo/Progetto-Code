@@ -36,9 +36,11 @@ Gli elenchi puntati si creano iniziando una riga con un asterisco, un più o un 
 1. Primo elemento
 2. Secondo elemento
 
-# Link
+## Link
 
 Per creare un link, si usa il testo del link tra parentesi quadre seguito dall'URL tra parentesi tonde.
  
 [OpenAI] (https://www.openai.com) 
+
+## Immagini
 
