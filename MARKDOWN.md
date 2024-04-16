@@ -44,3 +44,20 @@ Per creare un link, si usa il testo del link tra parentesi quadre seguito dall'U
 
 ## Immagini
 
+Simile ai link, ma si inizia con un punto esclamativo.
+
+![alt text](url dell'immagine)
+
+![Logo di OpenAI] (https://example.com/logo.png)
+
+## citazioni 
+Le citazioni si creano usando il simbolo > prima del testo.
+
+" > Questa è una citazione. "
+
+## Codice: 
+
+Per il codice inline, usa gli apici inversi (`), per i blocchi di codice, usa tre apici inversi o tre tilde (~).
+
+`codice inline`
+
