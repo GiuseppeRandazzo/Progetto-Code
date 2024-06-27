@@ -16,7 +16,7 @@ class ModelUser {
 
 const user = new ModelUser("nome", "email", "password");
 
-class ModelUtente {
+class ModelUsers {
   constructor(username, email, password) {
     this.primarykey = Math.random();
     this.username = username;
@@ -33,6 +33,7 @@ const utente = new ModelUtente(
 
 class ModelAds {
   constructor(referencekeyUser, title, description, price, category, urlphoto) {
+    this.primarykey = Math.random();
     this.referencekeyUser = referencekeyUser;
     this.title = title;
     this.description = description;
@@ -52,10 +53,10 @@ const ads = new ModelAds(
 );
 
 class ModelReviews {
-  constructor(referencekeyUser, referencekeyAds, title, description, rating) {
+  constructor(referencekeyUser, referencekeyAd, title, description, rating) {
     this.primarykey = Math.random();
     this.referencekeyUser = referencekeyUser;
-    this.referencekeyAds = referencekeyAds;
+    this.referencekeyAd = referencekeyAd;
     this.title = title;
     this.description = description;
     this.rating = rating;
@@ -72,7 +73,8 @@ const reviews = new ModelReviews(
 );
 
 class ModelAuth {
-  constructor(username, password) {
+  constructor(referencekeyUser) {
+    this.primarykey = Math.random();
     this.referencekeyUser = referencekeyUser;
     this.token = Math.random();
   }
@@ -81,13 +83,21 @@ class ModelAuth {
 const auth = new ModelAuth("utente");
 
 class ModelReports {
-  constructor(id, iduser, idad, description, status) {
-    this.primarykey = math.random();
-    this.referencekeyUser = iduser;
-    this.referencekeyAds = idad;
+  constructor(idUser, idAd, description, status) {
+    this.primarykey = Math.random();
+    this.referencekeyUser = idUser;
+    this.referencekeyAd = idAd;
     this.description = description;
     this.status = status;
   }
 }
 
 const reports = new ModelReports("utente", "ads", "description", "status");
+
+class modelFavorites {
+  constructor(idUser, idAd) {
+    this.primarykey = Math.random();
+    this.referencekeyUser = idUser;
+    this.referencekeyAd = idAd;
+  }
+}
