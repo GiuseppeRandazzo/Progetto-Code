@@ -179,12 +179,36 @@ class Marketplace {
       console.log("aggiunto ai preferiti");
     }
   }
+  createad(referencekeyUser, title, description, price, category, urlphoto) {
+    const authFound = this.auth.find(function (auth) {
+      if (auth.token === token) return true;
+      else return false;
+    });
+    if (!!authFound) {
+      console.log("Token non valido");
+    } else {
+      const newAd = new ModelAd(
+        referencekeyUser,
+        title,
+        description,
+        price,
+        category,
+        urlphoto
+      );
+      this.ad = [...this.ad, newAd];
+      console.log("Annuncio creato con successo");
+    }
+  }
+
+  deletead(referencekeyUser, title, description, price, category, urlphoto) {
+    const authFound = this.auth.find(function (auth) {
+      if (auth.token === token) return true;
+      else return false;
+    });
+    if (!!authFound) return authFound;
+  }
 }
-createad(referencekeyUser, title, description, price, category, urlphoto);
-
 modifiedad(referencekeyUser, title, description, price, category, urlphoto);
-
-deletead(referencekeyUser, title, description, price, category, urlphoto);
 
 createreview(referencekeyUser, referencekeyAd, title, description, rating);
 
